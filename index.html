@@ -1,54 +1,205 @@
----
-title: "Data Cleaning with OpenRefine"
-author: 
-  name: "Sabrina McCutchan"
-  affiliation: "[Research Design & Analysis Core (RDAC)](https://sites.globalhealth.duke.edu/rdac/)"
-  email: sabrina.mccutchan@duke.edu
-date: "`r Sys.Date()`"
-url: 
-output: 
- bookdown::gitbook:
-  config:
-   toc:
-     collapse: null
-     before: null
-     after: null
-     toc_depth: 2
-     toc_flot: true
----
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Data Cleaning with OpenRefine</title>
+  <meta name="description" content="Data Cleaning with OpenRefine" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
-# Preparing for the workshop {-}
-## Install software tools {-}
+  <meta property="og:title" content="Data Cleaning with OpenRefine" />
+  <meta property="og:type" content="book" />
+  
+  
+  
 
-- **OpenRefine**
-    - Download and install [OpenRefine](https://openrefine.org/download.html)
-    - If you're on Windows and don't already have Java installed, select the Windows kit with embedded Java
-    - Take 5 minutes to watch this introductory video for a preview of what OpenRefine can do
-<br/>
-<br/>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Data Cleaning with OpenRefine" />
+  
+  
+  
 
-<div style="text-align:center;">
-<iframe width="500" height="400" src="https://www.youtube.com/embed/B70J_H_zAWM" title="Google Refine 2.0 - Introduction (1 of 3) (video version 2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<meta name="date" content="2022-09-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path=""><a href="#preparing-for-the-workshop"><i class="fa fa-check"></i>Preparing for the workshop</a>
+<ul>
+<li class="chapter" data-level="" data-path=""><a href="#install-software-tools"><i class="fa fa-check"></i>Install software tools</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#create-a-free-icpsr-account"><i class="fa fa-check"></i>Create a free ICPSR account</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Cleaning with OpenRefine</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Data Cleaning with OpenRefine</h1>
+<p class="author multi-author"><em>Sabrina McCutchan</em></p>
+<address class="author_afil">
+<a href="https://sites.globalhealth.duke.edu/rdac/">Research Design &amp; Analysis Core (RDAC)</a><br>
+<a class="author_email" href="mailto:#"><a href="mailto:sabrina.mccutchan@duke.edu" class="email">sabrina.mccutchan@duke.edu</a></a>
+</address>
+<p class="date"><em>2022-09-23</em></p>
 </div>
-
+<div id="preparing-for-the-workshop" class="section level1 unnumbered hasAnchor">
+<h1>Preparing for the workshop<a href="#preparing-for-the-workshop" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="install-software-tools" class="section level2 unnumbered hasAnchor">
+<h2>Install software tools<a href="#install-software-tools" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><strong>OpenRefine</strong>
+<ul>
+<li>Download and install <a href="https://openrefine.org/download.html">OpenRefine</a></li>
+<li>If you’re on Windows and don’t already have Java installed, select the Windows kit with embedded Java</li>
+<li>Take 5 minutes to watch this introductory video for a preview of what OpenRefine can do
 <br/>
+<br/></li>
+</ul></li>
+</ul>
+<div style="text-align:center;">
+<iframe width="500" height="400" src="https://www.youtube.com/embed/B70J_H_zAWM" title="Google Refine 2.0 - Introduction (1 of 3) (video version 2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<p><br/></p>
+<ul>
+<li><strong>7zip (optional)</strong>
+<ul>
+<li>If you don’t already have a utility for unzipping compressed files, 7zip is both free and useful.</li>
+<li>Download and install <a href="https://www.7-zip.org/download.html">7zip</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="create-a-free-icpsr-account" class="section level2 unnumbered hasAnchor">
+<h2>Create a free ICPSR account<a href="#create-a-free-icpsr-account" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You’ll need an ICPSR account to download data for the workshop. ICPSR is a data repository maintained by the Inter-university Consortium for Political and Social Research at the University of Michigan.</p>
+<ol style="list-style-type: decimal">
+<li>Go to the <a href="https://www.icpsr.umich.edu/web/pages/">ICPSR website</a></li>
+<li>Click the Log In button in the upper right</li>
+<li>Scroll down and click the blue “Create Account” button</li>
+<li>Use your <strong>Duke email address</strong> to create your new account
+<ul>
+<li>You must use your Duke email to tie your account to Duke’s ICPSR membership. If you use a non-Duke email, you may encounter issues.</li>
+</ul></li>
+<li>Select “Yes” to allow the OR on your campus to view your information</li>
+<li>Save your log-in information somewhere you can easily find it again; you’ll need it at the beginning of the workshop</li>
+</ol>
+</div>
+</div>
+            </section>
 
-- **7zip (optional)**
-    - If you don't already have a utility for unzipping compressed files, 7zip is both free and useful.
-    - Download and install [7zip](https://www.7-zip.org/download.html)
+          </div>
+        </div>
+      </div>
 
-## Create a free ICPSR account {-}
-You'll need an ICPSR account to download data for the workshop. ICPSR is a data repository maintained by the Inter-university Consortium for Political and Social Research at the University of Michigan.
 
-1. Go to the [ICPSR website](https://www.icpsr.umich.edu/web/pages/)
-2. Click the Log In button in the upper right
-3. Scroll down and click the blue "Create Account" button
-4. Use your **Duke email address** to create your new account
-    - You must use your Duke email to tie your account to Duke's ICPSR membership. If you use a non-Duke email, you may encounter issues.
-5. Select "Yes" to allow the OR on your campus to view your information
-6. Save your log-in information somewhere you can easily find it again; you'll need it at the beginning of the workshop
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": false,
+"toc": {
+"collapse": null,
+"toc_depth": 2,
+"toc_flot": true
+}
+});
+});
+</script>
 
+</body>
+
+</html>
