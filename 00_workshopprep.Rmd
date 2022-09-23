@@ -1,0 +1,54 @@
+---
+title: "Data Cleaning with OpenRefine"
+author: 
+  name: "Sabrina McCutchan"
+  affiliation: "[Research Design & Analysis Core (RDAC)](https://sites.globalhealth.duke.edu/rdac/)"
+  email: sabrina.mccutchan@duke.edu
+date: "`r Sys.Date()`"
+url: 
+output: 
+ bookdown::gitbook:
+  config:
+   toc:
+     collapse: null
+     before: null
+     after: null
+     toc_depth: 2
+     toc_flot: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Preparing for the workshop {-}
+## Install software tools {-}
+
+- **OpenRefine**
+    - Download and install [OpenRefine](https://openrefine.org/download.html)
+    - If you're on Windows and don't already have Java installed, select the Windows kit with embedded Java
+    - Take 5 minutes to watch this introductory video for a preview of what OpenRefine can do
+<br/>
+<br/>
+
+<div style="text-align:center;">
+<iframe width="500" height="400" src="https://www.youtube.com/embed/B70J_H_zAWM" title="Google Refine 2.0 - Introduction (1 of 3) (video version 2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<br/>
+
+- **7zip (optional)**
+    - If you don't already have a utility for unzipping compressed files, 7zip is both free and useful.
+    - Download and install [7zip](https://www.7-zip.org/download.html)
+
+## Create a free ICPSR account {-}
+You'll need an ICPSR account to download data for the workshop. ICPSR is a data repository maintained by the Inter-university Consortium for Political and Social Research at the University of Michigan.
+
+1. Go to the [ICPSR website](https://www.icpsr.umich.edu/web/pages/)
+2. Click the Log In button in the upper right
+3. Scroll down and click the blue "Create Account" button
+4. Use your **Duke email address** to create your new account
+    - You must use your Duke email to tie your account to Duke's ICPSR membership. If you use a non-Duke email, you may encounter issues.
+5. Select "Yes" to allow the OR on your campus to view your information
+6. Save your log-in information somewhere you can easily find it again; you'll need it at the beginning of the workshop
+
